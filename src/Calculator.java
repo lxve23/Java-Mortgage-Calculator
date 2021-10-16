@@ -1,5 +1,5 @@
-import java.text.NumberFormat;
 import java.util.Scanner;
+import java.text.NumberFormat;
 
 public class Calculator {
     public static void main(String[] args) {
@@ -58,9 +58,11 @@ public class Calculator {
             catch (NumberFormatException e) {
                 System.err.println("Did not input an integer");
             }
-  break;
-nthlyInterestRate, totalPayments)
-                        / (Math.pow(1 + monthlyInterestRate, totalPayments) - 1));
+        }
+
+        double mortgage = principal
+        * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, totalPayments)
+        / (Math.pow(1 + monthlyInterestRate, totalPayments) - 1));
 
         System.out.println("Your mortgage is " + NumberFormat.getCurrencyInstance().format(mortgage) + " per month");
         input.close();
